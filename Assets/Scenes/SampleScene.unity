@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 0}
+  m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &196780497
@@ -1160,7 +1160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 0}
+  m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193432251
@@ -1814,7 +1814,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SerializedLibrary: {fileID: 11400000, guid: 37fa6b6c00394fd4783589d9e34b5d30, type: 2}
-  m_MaxNumberOfMovingImages: 2
+  m_MaxNumberOfMovingImages: 3
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &1885030227
 MonoBehaviour:
@@ -1831,6 +1831,7 @@ MonoBehaviour:
   prefabsToSpawn:
   - {fileID: 5663629008044707719, guid: bee662fefd4e7b14491aafba0b2e6f91, type: 3}
   - {fileID: 5663629008044707719, guid: f88bc2b948ef5b440a6af3f449b93698, type: 3}
+  - {fileID: 5663629008044707719, guid: 5f83f78de1cc33c4187238af2167aeab, type: 3}
 --- !u!114 &1885030228
 MonoBehaviour:
   m_ObjectHideFlags: 0

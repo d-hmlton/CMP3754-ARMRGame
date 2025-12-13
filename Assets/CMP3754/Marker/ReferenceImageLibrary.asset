@@ -37,3 +37,13 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: catVR
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5040801667278417255
+      m_GuidHigh: 6354074782786253237
+    m_SerializedTextureGuid:
+      m_GuidLow: 16443843898324586968
+      m_GuidHigh: 4488578428072531208
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: SwanGreyWhite
+    m_Texture: {fileID: 0}
