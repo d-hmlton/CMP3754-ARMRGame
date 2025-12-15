@@ -47,3 +47,23 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: swanClipart
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5602108292817457360
+      m_GuidHigh: 11614332782982328233
+    m_SerializedTextureGuid:
+      m_GuidLow: 16669199066981909094
+      m_GuidHigh: 12304488385275878040
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: swanClipart2
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5722756985433977537
+      m_GuidHigh: 11314704503830831010
+    m_SerializedTextureGuid:
+      m_GuidLow: 3351960565964284003
+      m_GuidHigh: 5950584566596503515
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: CygnetImage
+    m_Texture: {fileID: 0}
