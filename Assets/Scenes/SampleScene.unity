@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &196780497
@@ -1143,7 +1143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1193432250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1836,9 +1836,6 @@ MonoBehaviour:
   - {fileID: 5530690042486700916, guid: 964d49b0208e30c41a3676136c97b221, type: 3}
   - {fileID: 5530690042486700916, guid: 20a1118daf0b32b4fbf785b6384866fa, type: 3}
   foundDuckTypes: []
-  xModifier: 0
-  yModifier: 0
-  zModifier: 0
 --- !u!114 &1885030228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1898,10 +1895,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5967b1d5b7b2cbe44a05830b2645b576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 1985977438547678482, guid: 268436c681355a64292b69f324b0ca68, type: 3}
+  objectToPlace: {fileID: 5530690042486700916, guid: 8e7d86cd6fb5a5741b10aef086f45676, type: 3}
   raycastManager: {fileID: 1885030228}
   highlightMat: {fileID: 2100000, guid: 62924afaa1201cb4fb2f581b96813c74, type: 2}
-  unhighlightMat: {fileID: 2100000, guid: faab4ec87a8ade847be36c4a977ef4db, type: 2}
+  unhighlightMat: {fileID: 2100000, guid: 71566379e33915a4c98b063660c2cd92, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

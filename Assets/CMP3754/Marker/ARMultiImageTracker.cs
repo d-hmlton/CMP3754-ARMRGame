@@ -17,8 +17,6 @@ public class ARMultiImageTracker : MonoBehaviour
 
     public List<ARTrackedImage> foundDuckTypes = new List<ARTrackedImage>();
 
-    public float xModifier = 0; public float yModifier = 0; public float zModifier = 0;
-
     private void Start()
     {
         //locate the tracked image manager component 
