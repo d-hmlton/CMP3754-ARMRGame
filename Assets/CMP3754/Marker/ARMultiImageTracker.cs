@@ -81,7 +81,7 @@ public class ARMultiImageTracker : MonoBehaviour
             return;
         }
         arObjects[image.referenceImage.name].gameObject.SetActive(true);
-        arObjects[image.referenceImage.name].transform.position = new Vector3(image.transform.position.x, image.transform.position.y + 0.15f, image.transform.position.z);
+        arObjects[image.referenceImage.name].transform.position = image.transform.position;
         arObjects[image.referenceImage.name].transform.rotation = image.transform.rotation;
 
         if (!foundDuckTypes.Contains(image))
