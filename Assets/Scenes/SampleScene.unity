@@ -1124,6 +1124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planeObs: {fileID: 1885030231}
   txtmp: {fileID: 1373579496}
+  tracker: {fileID: 1885030227}
 --- !u!1 &1193432249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1815,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SerializedLibrary: {fileID: 11400000, guid: 37fa6b6c00394fd4783589d9e34b5d30, type: 2}
-  m_MaxNumberOfMovingImages: 5
+  m_MaxNumberOfMovingImages: 3
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &1885030227
 MonoBehaviour:
@@ -1834,8 +1835,10 @@ MonoBehaviour:
   - {fileID: 5530690042486700916, guid: 93ffb9715d926c946a12beeaf4e07ca4, type: 3}
   - {fileID: 5530690042486700916, guid: 964d49b0208e30c41a3676136c97b221, type: 3}
   - {fileID: 5530690042486700916, guid: 20a1118daf0b32b4fbf785b6384866fa, type: 3}
-  xModifier: 0.7
-  yModifier: 0.7
+  foundDuckTypes: []
+  xModifier: 0
+  yModifier: 0
+  zModifier: 0
 --- !u!114 &1885030228
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.25",
+      "version": "1.8.23",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -32,8 +32,8 @@
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.8.17",
-        "com.unity.test-framework": "1.4.5",
         "com.unity.nuget.mono-cecil": "1.11.4",
+        "com.unity.test-framework": "1.4.5",
         "com.unity.test-framework.performance": "3.0.3"
       },
       "url": "https://packages.unity.com"
@@ -167,7 +167,7 @@
       }
     },
     "com.unity.test-framework": {
-      "version": "1.6.0",
+      "version": "1.5.1",
       "depth": 0,
       "source": "builtin",
       "dependencies": {
@@ -177,7 +177,7 @@
       }
     },
     "com.unity.test-framework.performance": {
-      "version": "3.2.0",
+      "version": "3.1.0",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -261,7 +261,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.core-utils": {
-      "version": "2.5.3",
+      "version": "2.5.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -284,10 +284,10 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.subsystems": "1.0.0",
         "com.unity.modules.vr": "1.0.0",
         "com.unity.modules.xr": "1.0.0",
         "com.unity.xr.core-utils": "2.2.1",
-        "com.unity.modules.subsystems": "1.0.0",
         "com.unity.xr.legacyinputhelpers": "2.1.11"
       },
       "url": "https://packages.unity.com"

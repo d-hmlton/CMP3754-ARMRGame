@@ -15,7 +15,9 @@ public class ARMultiImageTracker : MonoBehaviour
     //spawned prefabs, indexed by name
     private Dictionary<string, GameObject> arObjects;
 
-    public float xModifier = 0; public float yModifier = 0;
+    public List<ARTrackedImage> foundDuckTypes = new List<ARTrackedImage>();
+
+    public float xModifier = 0; public float yModifier = 0; public float zModifier = 0;
 
     private void Start()
     {
@@ -79,7 +81,12 @@ public class ARMultiImageTracker : MonoBehaviour
             return;
         }
         arObjects[image.referenceImage.name].gameObject.SetActive(true);
-        arObjects[image.referenceImage.name].transform.position = new Vector3(image.transform.position.x, image.transform.position.y + 0.2f, image.transform.position.z);
-        arObjects[image.referenceImage.name].transform.rotation = new Quaternion(image.transform.rotation.x + xModifier, image.transform.rotation.y + yModifier, image.transform.rotation.z, image.transform.rotation.w);
+        arObjects[image.referenceImage.name].transform.position = new Vector3(image.transform.position.x, image.transform.position.y + 0.15f, image.transform.position.z);
+        arObjects[image.referenceImage.name].transform.rotation = new Quaternion(image.transform.rotation.x * xModifier, image.transform.rotation.y * yModifier, image.transform.rotation.z * zModifier, image.transform.rotation.w);
+
+        if (!foundDuckTypes.Contains(image))
+        {
+            foundDuckTypes.Add(image);
+        }
     }
 }
