@@ -26,9 +26,7 @@ public class UIController : MonoBehaviour
 
     public void Button1Clicked()
     {
-        int res = planeObs.QueryHighlighted();
-        //Update text
-        txtmp.text = "Count: "+res.ToString();
+        // Add functionality
     }
 
     public void Button2Clicked()
