@@ -7,7 +7,11 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI txtmp;
     public ARMultiImageTracker tracker;
     public GameObject trophyPanel;
+    public GameObject achievementPop;
 
+    private int _lastCount = 0;
+    public float _time = 0.0f;
+    private bool _popActive = false;
     private bool _gameWon = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,12 +23,25 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateDuckCount();
-        if ((tracker.foundSwanTypes.Count == 3) && (_gameWon == false))
+        if (tracker.foundSwanTypes.Count > _lastCount)
         {
-            trophyPanel.SetActive(true);
-            _gameWon = true;
+            _lastCount += 1;
+            UpdateDuckCount();
+
+            if ((_lastCount == 3) && (_gameWon == false))
+            {
+                if (_popActive == true) { DeactivatePop(); }
+                _gameWon = true;
+                trophyPanel.SetActive(true);
+            }
+            else
+            {
+                ActivatePop();
+            }
         }
+
+        if (_popActive == true) { _time += Time.deltaTime; }
+        if (_time > 3) { DeactivatePop(); }
     }
 
     public void UpdateDuckCount()
@@ -49,4 +66,18 @@ public class UIController : MonoBehaviour
         planeObs.DeleteHighlighted();
     }
 
+    public void ActivatePop()
+    {
+        _popActive = true;
+        achievementPop.SetActive(true);
+        return;
+    }
+
+    public void DeactivatePop()
+    {
+        _time = 0;
+        _popActive = false;
+        achievementPop.SetActive(false);
+        return;
+    }
 }
