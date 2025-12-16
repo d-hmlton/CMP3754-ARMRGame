@@ -15,7 +15,7 @@ public class ARMultiImageTracker : MonoBehaviour
     //spawned prefabs, indexed by name
     private Dictionary<string, GameObject> arObjects;
 
-    public List<ARTrackedImage> foundDuckTypes = new List<ARTrackedImage>();
+    public List<ARTrackedImage> foundSwanTypes = new List<ARTrackedImage>();
 
     private void Start()
     {
@@ -82,9 +82,9 @@ public class ARMultiImageTracker : MonoBehaviour
         arObjects[image.referenceImage.name].transform.position = image.transform.position;
         arObjects[image.referenceImage.name].transform.rotation = image.transform.rotation;
 
-        if (!foundDuckTypes.Contains(image))
+        if (!foundSwanTypes.Contains(image))
         {
-            foundDuckTypes.Add(image);
+            foundSwanTypes.Add(image);
         }
     }
 }
